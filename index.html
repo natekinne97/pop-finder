@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="Pop Finder" content="Find the population of any U.S city.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Population Finder</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+        <!-- jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <header>Population Finder</header>
+        <!-- form for searches -->
+        <form class="default">
+            <fieldset>
+                <select id="searches" name="searches">
+                    <option value="City">City</option>
+                    <option value="County">County</option>
+                    <option value="State">State</option>
+                </select>
+                <input type="text" id="term" required>
+                <input type="submit" placeholder="submit">
+            </fieldset>
+        </form>
+
+        <!-- Weather section loaded on search -->
+        <section class="weather hidden">
+            <p>5 day forecast</p>
+        </section>
+        <!-- Main section loaded on search -->
+        <main class=" hidden">
+            <!-- census data filled in with js from api-->
+            <section class="census-data">
+                <h1 class="location"></h1>
+                <p class="city"></p>
+                <p class="county"></p>
+                <p class="state"></p>
+                <p class="fact"></p>
+            </section>
+            <!-- news data -->
+            <section class="news">
+                <h2>News</h2>
+            </section>
+
+        </main>
+        <!-- script -->
+        <script src="code.js"></script>
+    </body>
+</html>
