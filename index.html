@@ -26,18 +26,18 @@
         </form>
 
         <!-- Weather section loaded on search -->
-        <section class="weather hidden">
+        <section class="weather non-default hidden">
             <p>5 day forecast</p>
         </section>
         <!-- Main section loaded on search -->
-        <main class=" hidden">
+        <main class="non-default hidden">
             <!-- census data filled in with js from api-->
             <section class="census-data">
                 <h1 class="location"></h1>
-                <p class="city"></p>
-                <p class="county"></p>
-                <p class="state"></p>
-                <p class="fact"></p>
+                <p class="city hidden"></p>
+                <p class="county hidden"></p>
+                <p class="state hidden"></p>
+                <p class="fact hidden"></p>
             </section>
             <!-- news data -->
             <section class="news">
@@ -46,6 +46,7 @@
 
         </main>
         <!-- script -->
+        <script src="store.js"></script>
         <script src="code.js"></script>
     </body>
 </html>
